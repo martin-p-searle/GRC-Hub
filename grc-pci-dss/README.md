@@ -5,7 +5,7 @@ This repository contains tools, scripts, and documentation to support PaySafe Re
 ## Table of Contents
 - [Overview](#overview)
 - [Repository Structure](#repository-structure)
-- [PCI-DSS v4.0 Gap Assessment] (# PCI-DSS v4.0 Gap Assessment)
+- [View PCI-DSS Gap Assessment](03-Compliance/PCI-DSS-Gap-Assessment
 - [Installation](#installation)
 - [Usage](#usage)
 - [PCI-DSS Compliance](#pci-dss-compliance)
