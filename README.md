@@ -1,50 +1,32 @@
 # GRC-Hub
 
-Welcome to **GRC-Hub**, a collection of simulated **Governance, Risk, and Compliance (GRC)** projects for educational and portfolio purposes. This repository hosts fictional company projects demonstrating compliance with industry standards, including **PCI-DSS**, **GDPR**, **NIST**, **PDPA**, and **ISO27001**.
+A portfolio of self-directed **Governance, Risk and Compliance (GRC)** training projects. Each project is built around a **fictional organisation** and applies a recognised standard or regulation: GDPR, ISO/IEC 27001, NIST CSF, Singapore's PDPA and PCI-DSS v4.0.
 
-## Purpose
-GRC-Hub aims to:
-- Simulate real-world compliance programs for fictional companies across multiple frameworks: **PCI-DSS** (Payment Card Industry Data Security Standard), **GDPR** (General Data Protection Regulation), **NIST** (National Institute of Standards and Technology frameworks, e.g., CSF, 800-53), **PDPA** (Personal Data Protection Act), and **ISO27001** (Information Security Management).
-- Provide hands-on examples of GRC documentation, policies, implementation plans, and security measures.
-- Serve as a portfolio to showcase expertise in cybersecurity and compliance.
+> **Please note:** every organisation, system and data set in this repository is invented. These are practice exercises completed alongside professional training. They are not client or employer work, and they contain no real personal data.
 
-## Repository Structure
-- **[grc/](grc/)**: Company-specific GRC projects, such as PaySafe Retail for PCI-DSS compliance.
-- **[nist/](nist/)**: Planned resources for NIST frameworks (e.g., NIST Cybersecurity Framework, NIST 800-53).
-- **[gdpr/](gdpr/)**: Planned resources for GDPR compliance (EU data protection).
-- **[pdpa/](pdpa/)**: Planned resources for PDPA compliance (data protection for jurisdictions like Singapore).
-- **[iso27001/](iso27001/)**: Planned resources for ISO27001 compliance (information security
-  ​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
-# TechNova Solutions PCI-DSS Compliance Program
+## Projects
 
+| Framework | Fictional organisation | Folder | What's in it |
+|---|---|---|---|
+| **GDPR** | Generic organisation handling EU personal data | [`gdpr/`](gdpr/) | Gap analysis, DPIA template, DSAR process, Data Processing Agreement template (Article 28), privacy policies, staff training materials |
+| **ISO/IEC 27001** | SecureCorp | [`iso27001/`](iso27001/) | Standard fundamentals, information security policy, implementation plan, security controls |
+| **NIST CSF** | TechSecure Solutions | [`nist/`](nist/) | Framework fundamentals, cybersecurity policy, implementation plan, security controls |
+| **PDPA (Singapore)** | DataSafe Solutions | [`pdpa/`](pdpa/) | PDPA fundamentals, data protection policy, implementation plan, data protection measures |
+| **PCI-DSS v4.0** | TechNova Solutions | [`docs/`](docs/) | Fundamentals, payment security policy, implementation plan, network security measures |
+| **PCI-DSS v4.0** | PaySafe Retail | [`grc/`](grc/) | PCI-DSS policy, SAQ A, user guide, configuration examples, and Python and shell scripts for log monitoring, vulnerability scanning and firewall setup, with tests |
 
+## Where to start
 
-TechNova Solutions is a fictional e-commerce retailer implementing a compliance program for [PCI-DSS v4.0.0](https://www.pcisecuritystandards.org/document_library/?document=pci_dss) to secure cardholder data.
+1. **Data protection:** [`gdpr/GDPR_Gap_Analysis.md`](gdpr/GDPR_Gap_Analysis.md) shows the approach, and [`gdpr/DSAR_Process.md`](gdpr/DSAR_Process.md) and [`gdpr/Data_Processing_Agreements.md`](gdpr/Data_Processing_Agreements.md) build on its findings.
+2. **Information security management:** [`iso27001/implementation/iso27001-plan.md`](iso27001/implementation/iso27001-plan.md).
+3. **Payment security:** [`docs/`](docs/) for the policy and plan, and [`grc/`](grc/) for the supporting tools.
 
-## PCI-DSS Fundamentals
-Overview of PCI-DSS requirements. See [PCI-DSS Fundamentals](docs/TechNovaSolutionsPCIDSSFundamentals.md) for details.
+## Skills shown
 
-## Payment Security Policy
-Security policies for cardholder data. See [Payment Security Policy](docs/TechNovaSolutionsPCIDSSPaymentSecurityPolicy.md) for details.
+Gap analysis, policy writing, implementation planning, control selection, data subject rights procedures, third-party processing agreements and compliance documentation across several frameworks.
 
-## Implementation Plan
-Steps to achieve PCI-DSS compliance. See [Implementation Plan](docs/TechNovaSolutionsPCIDSSImplementationPlan.md) for details.
+## Licence
 
-## Network Security Measures
-Security controls for the Cardholder Data Environment (CDE). See [Network Security Measures](docs/TechNovaSolutionsPCIDSSNetworkSecurityMeasures.md) for details.
+Released under the GPL-3.0 licence. See [`LICENSE`](LICENSE).
 
-- **Planned Projects**:
-  - **GDPR**: Compliance program for a fictional EU-based company (e.g., TechTrend Innovations).
-  - **NIST**: Implementation of NIST CSF or 800-53 for a fictional U.S. organisation.
-  - **PDPA**: Data protection program for a fictional company in a PDPA-regulated region (e.g., Singapore).
-
-## Getting Started
-1. Explore the **[grc/](grc/)** folder for the PaySafe Retail PCI-DSS project.
-2. Review planned folders (`nist/`, `gdpr/`, `pdpa/`, `iso27001/`) for upcoming projects.
-3. Check back for new compliance simulations as the repository grows.
-
-## Notes
-- All projects are **fictional** and intended for educational use only.
-- Contributions or suggestions? Open an issue or pull request!
-
-*Last updated: April 2025*
+*Last updated: October 2026*
