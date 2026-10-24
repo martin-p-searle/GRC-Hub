@@ -1,25 +1,59 @@
-# GRC: PCI-DSS Compliance for PaySafe Retail
+# GRC: PCI DSS Compliance for PaySafe Retail (Fictional)
 
-This repository contains tools, scripts, and documentation to support PaySafe Retail’s Governance, Risk, and Compliance (GRC) efforts for achieving and maintaining [PCI-DSS compliance](https://www.pcisecuritystandards.org/). The project focuses on securing cardholder data, automating compliance tasks, and ensuring adherence to the Payment Card Industry Data Security Standard (PCI-DSS) requirements for retail payment processing.
+> **Fictional portfolio project.** PaySafe Retail does not exist. No real client, cardholder data or payment system is involved, and this is not an official PCI DSS assessment. It was written to practise governance, risk and compliance (GRC) work.
+
+This project simulates a Payment Card Industry Data Security Standard ([PCI DSS](https://www.pcisecuritystandards.org/)) compliance effort for a fictional online retailer. It shows how a GRC analyst would assess current practice against the standard, record gaps, and plan remediation.
 
 ## Table of Contents
+
 - [Overview](#overview)
-- [Repository Structure](#repository-structure)
-- [View PCI-DSS Gap Assessment](03-Compliance/PCI-DSS-Gap-Assessment
-- [Installation](#installation)
-- [Usage](#usage)
-- [PCI-DSS Compliance](#pci-dss-compliance)
+- [Scenario and scope](#scenario-and-scope)
+- [Repository structure](#repository-structure)
+- [How to read this project](#how-to-read-this-project)
+- [Limitations](#limitations)
 - [Contributing](#contributing)
-- [License](#license)
+- [Author](#author)
 
 ## Overview
-PaySafe Retail processes credit and debit card transactions, requiring strict compliance with PCI-DSS to protect cardholder data. This repository provides:
-- Scripts for vulnerability scanning and log monitoring.
-- Configurations for secure network and access control.
-- Documentation for Self-Assessment Questionnaires (SAQs) and compliance validation.
-- Examples of secure payment processing integrations.
 
-The project aligns with PCI-DSS v4.0.1 requirements and supports PaySafe’s partnership with Qualified Security Assessors (QSAs) like SecurityMetrics and Aperia for validation.[](https://developer.paysafe.com/en/support/reference-information/pci-dss-validation/)
+PaySafe Retail is a fictional e-commerce company that accepts credit and debit card payments. Taking card payments means it must meet PCI DSS to protect cardholder data.
+
+This repository holds the documents that support that effort. The main piece is a gap assessment that compares the company's current practice with the PCI DSS v4.0.1 requirements.
+
+## Scenario and scope
+
+- **Company:** PaySafe Retail, an online retailer (fictional).
+- **In scope:** the processes and systems involved in accepting card payments for the online store.
+- **Standard used:** PCI DSS v4.0.1.
+- **Assumptions:** all assumptions used for the assessment are recorded in the gap assessment itself, so a reader can see what the findings depend on.
+
+## Repository structure
+
+| Path | What it contains |
+|---|---|
+| [`03-Compliance/PCI-DSS-Gap-Assessment`](03-Compliance/PCI-DSS-Gap-Assessment/) | Gap assessment against PCI DSS v4.0.1: requirements, findings and recommended actions |
+
+Add a row to this table each time you add a folder or document, so the list always matches what is in the repository.
+
+## How to read this project
+
+1. Read the scenario and scope above.
+2. Open the [gap assessment](03-Compliance/PCI-DSS-Gap-Assessment/). For each requirement it records what the standard asks for, what the fictional company does today, any gap, and the recommended action.
+3. Check that each finding states the evidence it rests on and why it was rated as it was.
+
+## Limitations
+
+- All people, systems and evidence are invented.
+- The assessment is a learning exercise. It is not a Report on Compliance, an Attestation of Compliance or a substitute for a Qualified Security Assessor.
+- Requirements change between versions of the standard. Check the current text on the PCI Security Standards Council website before relying on any detail.
+
+## Contributing
+
+This is a personal portfolio project. Feedback and corrections are welcome: please open an issue.
+
+## Author
+
+Martin Searle, working towards a career in GRC and information security.
 
 ## Repository Structure
 
