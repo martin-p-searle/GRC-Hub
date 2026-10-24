@@ -1,55 +1,107 @@
 # GRC: PCI DSS Compliance for PaySafe Retail (Fictional)
 
-> **Fictional portfolio project.** PaySafe Retail does not exist. No real client, cardholder data or payment system is involved, and this is not an official PCI DSS assessment. It was written to practise governance, risk and compliance (GRC) work.
+> **Fictional portfolio project.** PaySafe Retail does not exist. No real client, cardholder data, payment system or compliance assessment is involved. This project was created as a learning exercise to demonstrate Governance, Risk and Compliance (GRC) skills.
 
-This project simulates a Payment Card Industry Data Security Standard ([PCI DSS](https://www.pcisecuritystandards.org/)) compliance effort for a fictional online retailer. It shows how a GRC analyst would assess current practice against the standard, record gaps, and plan remediation.
+This project simulates a Payment Card Industry Data Security Standard (PCI DSS) compliance assessment for a fictional online retailer. It demonstrates how a GRC analyst can identify compliance gaps, assess risk, prioritise remediation activities and communicate findings to management.
 
 ## Table of Contents
 
 - [Overview](#overview)
-- [Scenario and scope](#scenario-and-scope)
-- [Repository structure](#repository-structure)
-- [How to read this project](#how-to-read-this-project)
+- [Scenario and Scope](#scenario-and-scope)
+- [Project Documents](#project-documents)
+- [How to Read This Project](#how-to-read-this-project)
+- [Skills Demonstrated](#skills-demonstrated)
 - [Limitations](#limitations)
 - [Contributing](#contributing)
 - [Author](#author)
 
 ## Overview
 
-PaySafe Retail is a fictional e-commerce company that accepts credit and debit card payments. Taking card payments means it must meet PCI DSS to protect cardholder data.
+PaySafe Retail is a fictional e-commerce retailer that accepts credit and debit card payments through a third-party payment provider.
 
-This repository holds the documents that support that effort. The main piece is a gap assessment that compares the company's current practice with the PCI DSS v4.0.1 requirements.
+The project focuses on assessing the organisation's alignment with PCI DSS v4.0.1 requirements and identifying gaps that could affect the confidentiality and security of cardholder data.
 
-## Scenario and scope
+The primary deliverable is a detailed PCI DSS gap assessment that:
 
-- **Company:** PaySafe Retail, an online retailer (fictional).
-- **In scope:** the processes and systems involved in accepting card payments for the online store.
-- **Standard used:** PCI DSS v4.0.1.
-- **Assumptions:** all assumptions used for the assessment are recorded in the gap assessment itself, so a reader can see what the findings depend on.
+- Reviews current practices against PCI DSS requirements.
+- Identifies compliance weaknesses.
+- Assesses associated risk.
+- Assigns remediation priorities.
+- Provides recommended corrective actions.
 
-## Repository structure
+## Scenario and Scope
 
-| Path | What it contains |
-|---|---|
-| [`03-Compliance/PCI-DSS-Gap-Assessment`](03-Compliance/PCI-DSS-Gap-Assessment/) | Gap assessment against PCI DSS v4.0.1: requirements, findings and recommended actions |
+### Organisation
 
-Add a row to this table each time you add a folder or document, so the list always matches what is in the repository.
+**PaySafe Retail** is a fictional online retailer used solely for portfolio and training purposes.
 
-## How to read this project
+### Assessment Scope
 
-1. Read the scenario and scope above.
-2. Open the [gap assessment](03-Compliance/PCI-DSS-Gap-Assessment/). For each requirement it records what the standard asks for, what the fictional company does today, any gap, and the recommended action.
-3. Check that each finding states the evidence it rests on and why it was rated as it was.
+The assessment considers:
+
+- Card payment processes.
+- Payment-related systems.
+- Customer service activities involving payment information.
+- Security controls relevant to PCI DSS compliance.
+- Governance and compliance activities associated with payment card security.
+
+### Standard Used
+
+- PCI DSS v4.0.1
+
+### Assessment Approach
+
+The project uses a gap assessment methodology to compare current practices against PCI DSS requirements and determine where improvements are required.
+
+## Project Documents
+
+| Document | Description |
+|----------|-------------|
+| PCI-DSS-Gap-Assessment.md | Detailed PCI DSS v4.0.1 gap assessment including findings, risk ratings, evidence summaries and remediation recommendations. |
+
+## How to Read This Project
+
+1. Review the scenario and scope to understand the fictional organisation.
+2. Read the PCI-DSS-Gap-Assessment.md document.
+3. Examine the findings and associated risk ratings.
+4. Review the recommended remediation actions.
+5. Follow the remediation roadmap to understand prioritisation and sequencing.
+
+## Skills Demonstrated
+
+This project demonstrates practical GRC capabilities including:
+
+- Compliance gap assessments
+- Control evaluation
+- Risk analysis
+- Remediation planning
+- Security governance
+- Standards interpretation
+- Compliance reporting
+- Evidence-based assessment writing
+- Executive-level communication
+- PCI DSS understanding
 
 ## Limitations
 
-- All people, systems and evidence are invented.
-- The assessment is a learning exercise. It is not a Report on Compliance, an Attestation of Compliance or a substitute for a Qualified Security Assessor.
-- Requirements change between versions of the standard. Check the current text on the PCI Security Standards Council website before relying on any detail.
+- All organisations, systems, users, data and evidence are fictional.
+- This project is intended solely for learning and portfolio purposes.
+- It is not a Report on Compliance (ROC).
+- It is not an Attestation of Compliance (AOC).
+- It is not a Qualified Security Assessor (QSA) assessment.
+- PCI DSS requirements may change over time. Readers should always refer to the latest official PCI Security Standards Council publications.
 
 ## Contributing
 
-This is a personal portfolio project. Feedback and corrections are welcome: please open an issue.
+This is a personal portfolio project. Suggestions, corrections and constructive feedback are welcome through GitHub issues.
+
+## Author
+
+**Martin Searle**
+
+Governance, Risk and Compliance professional in transition towards information security, privacy and cyber governance roles.
+
+This repository forms part of a wider portfolio 
 
 ## Author
 
