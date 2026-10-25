@@ -16,7 +16,8 @@ A self-directed training project for educational and portfolio purposes. All peo
 
 ## Contents
 
-* [PDPA fundamentals](FILENAME-1.md)
+    
+* [PDPA fundamentals](pdpa-fundamentals.md)
 * [Data protection policy](FILENAME-2.md)
 * [Implementation plan](FILENAME-3.md)
 * [Data protection measures](FILENAME-4.md)
