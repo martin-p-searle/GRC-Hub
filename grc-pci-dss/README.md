@@ -57,7 +57,7 @@ The project uses a gap assessment methodology to compare current practices again
 
 | Document | Description |
 |----------|-------------|
-| PCI-DSS-Gap-Assessment.md | Detailed PCI DSS v4.0.1 gap assessment including findings, risk ratings, evidence summaries and remediation recommendations. |
+| [PCI-DSS-Gap-Assessment.md](PCI-DSS-Gap-Assessment.md)| Detailed PCI DSS v4.0.1 gap assessment including findings, risk ratings, evidence summaries and remediation recommendations. |
 
 ## How to Read This Project
 
