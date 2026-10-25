@@ -13,7 +13,7 @@ A portfolio of self-directed **Governance, Risk and Compliance (GRC)** training 
 | **NIST CSF** | TechSecure Solutions | [`nist/`](nist/) | Framework fundamentals, cybersecurity policy, implementation plan, security controls, and a CSF 2.0 maturity assessment (PDF) that tests practice against the policy |
 | **PDPA (Singapore)** | DataSafe Solutions | [`pdpa/`](pdpa/) | PDPA fundamentals, data protection policy, implementation plan, data protection measures |
 | **PCI-DSS v4.0** | TechNova Solutions | [`docs/`](docs/) | Fundamentals, payment security policy, implementation plan, network security measures |
-| **PCI-DSS v4.0** | PaySafe Retail | [`grc/`](grc/) | PCI-DSS policy, SAQ A guide, user guide, configuration examples, and Python and shell scripts for log monitoring, vulnerability scanning and firewall setup |
+| **PCI-DSS v4.0** | PaySafe Retail | [PCI-DSS v4.0](grc/) | PCI-DSS policy, SAQ A guide, user guide, configuration examples, and Python and shell scripts for log monitoring, vulnerability scanning and firewall setup |
 
 ## Where to start
 
