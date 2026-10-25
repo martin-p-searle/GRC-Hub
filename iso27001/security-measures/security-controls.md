@@ -1,67 +1,81 @@
 # Security Controls
 
 ## Overview
-This document outlines the security controls implemented as part of the ISO 27001 Information Security Management System (ISMS) within the GRC-Hub project. The controls are selected from ISO 27001 Annex A (aligned with ISO 27002) based on the risk assessment and Statement of Applicability (SoA). These measures protect the confidentiality, integrity, and availability of information assets.
+
+This document summarises the security controls selected for SecureCorp's ISO/IEC 27001:2022 Information Security Management System (ISMS). Controls come from Annex A (aligned with ISO/IEC 27002:2022) and are chosen from the [Risk Assessment Report](../compliance/risk-assessment-report.md). The full applicability decision for all 93 controls is in the [Statement of Applicability](../compliance/statement-of-applicability.md). These measures protect the confidentiality, integrity and availability of information assets.
+
+*SecureCorp is a fictional organisation created for training purposes.*
 
 ## Control Selection Process
-- **Risk Assessment**: Controls are identified based on risks outlined in the [Risk Assessment Report](./Risk_Assessment_Report.md).
-- **Statement of Applicability (SoA)**: The applicability and implementation status of each control are documented in the [Statement of Applicability (SoA)](./Statement_of_Applicability.md).
-- **Training**: Employees are trained on these controls using the [Security Awareness Training](./Security_Awareness_Training.md).
 
-## Security Controls by Domain
+- **Risk Assessment**: Controls are selected to treat the risks in the [Risk Assessment Report](../compliance/risk-assessment-report.md) (R1 to R8).
+- **Statement of Applicability (SoA)**: Applicability, justification and implementation status for each control are recorded in the [SoA](../compliance/statement-of-applicability.md).
+- **Training**: Staff are trained on these controls through the [Security Awareness Training](../policies/security-awareness-training.md).
 
-### 1. Information Security Policies (A.5)
-- **A.5.1.1 - Policies for Information Security**: Develop and approve information security policies to guide the ISMS.
-  - **Implementation**: Policies are documented and communicated to all employees.
-  - **Reference**: See the [Security Awareness Training](./Security_Awareness_Training.md) for policy training.
+## Controls by Theme
 
-### 2. Human Resource Security (A.7)
-- **A.7.2.2 - Information Security Awareness, Education, and Training**: Ensure all employees receive regular security training.
-  - **Implementation**: Annual training sessions conducted, with materials in the [Security Awareness Training](./Security_Awareness_Training.md).
-- **A.7.3.1 - Termination or Change of Employment Responsibilities**: Remove access rights upon termination.
-  - **Implementation**: Access removal process in place, aligned with the [Access Control Policy](./Access_Control_Policy.md).
+### Organizational controls (Annex A.5)
 
-### 3. Asset Management (A.8)
-- **A.8.1.1 - Inventory of Assets**: Maintain an inventory of all information assets.
-  - **Implementation**: Asset inventory documented in the [Asset Inventory](./Asset_Inventory.md).
-- **A.8.2.1 - Classification of Information**: Classify information based on sensitivity (e.g., public, confidential).
-  - **Implementation**: Classification guidelines established and communicated.
+- **5.1 Policies for information security**: Information security policy approved by management, published and reviewed annually.
+  - *Implementation*: Policy documented and communicated to all staff. Related risks: all.
+- **5.9 Inventory of information and other associated assets**: Maintain an inventory of information assets with named owners.
+  - *Implementation*: Held in the [Asset Inventory](../compliance/asset-inventory.md). Related risks: R6.
+- **5.12 Classification of information**: Classify information by sensitivity (public, internal, confidential, restricted).
+  - *Implementation*: Classification scheme published; underpins DLP rules. Related risks: R7.
+- **5.15 Access control**: Role-based access rules for information and systems.
+  - *Implementation*: See the [Access Control Policy](../policies/access-control-policy.md). Related risks: R4, R8.
+- **5.26 Response to information security incidents**: Respond to incidents in a timely, documented way.
+  - *Implementation*: Procedures in the [Incident Response Plan](../policies/incident-response-plan.md). Related risks: R2, R7.
+- **5.31 Legal, statutory, regulatory and contractual requirements**: Identify and meet applicable legal obligations (e.g., UK GDPR).
+  - *Implementation*: Reviewed during risk assessment (see section 6 of the [Risk Assessment Report](../compliance/risk-assessment-report.md)). Related risks: R7.
+- **5.35 Independent review of information security**: Review the ISMS independently at planned intervals.
+  - *Implementation*: Internal audit scheduled for Months 10-12, see the [security-measures README](README.md).
 
-### 4. Access Control (A.9)
-- **A.9.1.2 - Access to Networks and Network Services**: Restrict network access to authorized users.
-  - **Implementation**: Role-based access controls implemented, detailed in the [Access Control Policy](./Access_Control_Policy.md).
-- **A.9.4.1 - Information Access Control**: Use strong passwords and multi-factor authentication (MFA).
-  - **Implementation**: MFA enforced for all critical systems.
+### People controls (Annex A.6)
 
-### 5. Incident Management (A.16)
-- **A.16.1.2 - Reporting Information Security Events**: Require employees to report security incidents promptly.
-  - **Implementation**: Incident reporting process outlined in the [Incident Response Plan](./Incident_Response_Plan.md).
-- **A.16.1.5 - Response to Information Security Incidents**: Respond to incidents in a timely manner.
-  - **Implementation**: Response procedures documented in the [Incident Response Plan](./Incident_Response_Plan.md).
+- **6.3 Information security awareness, education and training**: All staff receive regular training.
+  - *Implementation*: Annual training plus quarterly phishing simulations, using the [Security Awareness Training](../policies/security-awareness-training.md). Related risks: R1.
+- **6.5 Responsibilities after termination or change of employment**: Remove access promptly when people leave or change role.
+  - *Implementation*: Joiner-mover-leaver process linked to the HR system. Related risks: R4.
+- **6.8 Information security event reporting**: Staff report suspected incidents promptly.
+  - *Implementation*: Reporting route defined in the [Incident Response Plan](../policies/incident-response-plan.md). Related risks: R1, R7.
 
-### 6. Compliance (A.18)
-- **A.18.1.1 - Identification of Applicable Legislation**: Ensure compliance with relevant laws (e.g., GDPR).
-  - **Implementation**: Legal requirements reviewed during risk assessment, per the [Risk Assessment Report](./Risk_Assessment_Report.md).
-- **A.18.2.1 - Independent Review of Information Security**: Conduct regular internal audits of the ISMS.
-  - **Implementation**: Audit schedule planned for Months 10-12, as per the [security-measures/README.md](../security-measures/README.md).
+### Technological controls (Annex A.8)
+
+- **8.3 Information access restriction**: Restrict access to information according to the access control policy.
+  - *Implementation*: Role-based access enforced on critical systems. Related risks: R4, R8.
+- **8.5 Secure authentication**: Strong authentication, including MFA.
+  - *Implementation*: Phishing-resistant MFA for all staff. Related risks: R1.
+- **8.20 Networks security**: Restrict and monitor network access.
+  - *Implementation*: Segmented networks; access rules documented in the [Access Control Policy](../policies/access-control-policy.md). Related risks: R3.
 
 ## Implementation Status
-| **Control**          | **Domain**         | **Status**      | **Responsible Team** |
-|----------------------|--------------------|-----------------|----------------------|
-| A.5.1.1             | Policies           | Implemented     | InfoSec Team         |
-| A.7.2.2             | HR Security        | Implemented     | HR Team              |
-| A.8.1.1             | Asset Management   | In Progress     | IT Team              |
-| A.9.1.2             | Access Control     | Implemented     | IT Team              |
-| A.16.1.2            | Incident Management| In Progress     | Security Team        |
-| A.18.1.1            | Compliance         | Implemented     | Compliance Team      |
+
+*Status as at 1 October 2026.*
+
+| Control | Theme | Status | Owner | Related risks |
+|---------|-------|--------|-------|---------------|
+| 5.1 | Organizational | Implemented | Information Security Manager | All |
+| 5.9 | Organizational | In progress | Head of IT | R6 |
+| 5.15 | Organizational | Implemented | Head of IT | R4, R8 |
+| 5.26 | Organizational | In progress | Information Security Manager | R2, R7 |
+| 5.31 | Organizational | Implemented | DPO | R7 |
+| 5.35 | Organizational | Planned (Months 10-12) | Information Security Manager | All |
+| 6.3 | People | Implemented | HR Director | R1 |
+| 6.5 | People | Implemented | HR Director | R4 |
+| 8.3 | Technological | Implemented | Head of IT | R4, R8 |
+| 8.5 | Technological | Implemented | CIO | R1 |
 
 ## Next Steps
-- **Timeline**: Full implementation of controls by Month 9, as outlined in the [security-measures/README.md](../security-measures/README.md).
-- **Monitoring**: Regularly review control effectiveness through internal audits.
-- **Training**: Ensure all employees are trained on controls, using the [Security Awareness Training](./Security_Awareness_Training.md).
 
-## Responsible Teams
-- **Information Security Team**: Oversees control implementation and monitoring.
-- **IT Team**: Implements technical controls (e.g., access controls, asset inventory).
-- **HR Team**: Manages training and employee-related controls.
-- **Security Team**: Handles incident response and monitoring.
+- **Timeline**: Full implementation of controls by Month 9, as outlined in the [security-measures README](README.md).
+- **Monitoring**: Review control effectiveness quarterly, alongside the risk register review.
+- **Training**: Ensure all staff are trained on these controls using the [Security Awareness Training](../policies/security-awareness-training.md).
+
+## Responsible Roles
+
+- **Information Security Manager**: Oversees control implementation and monitoring.
+- **Head of IT**: Implements technical controls (access control, asset inventory).
+- **HR Director**: Owns training and employee-related controls.
+- **DPO**: Owns legal and data protection obligations.
+- **CIO**: Accountable for authentication and endpoint security.
