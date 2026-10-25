@@ -1,7 +1,7 @@
 # TechNova Solutions: PCI-DSS Fundamentals
 
 ## Overview
-TechNova Solutions, a fictional e-commerce retailer, is implementing a compliance program for [PCI-DSS v4.0.0](https://www.pcisecuritystandards.org/document_library/?document=pci_dss) to secure cardholder data. This document outlines the fundamental requirements of PCI-DSS to ensure a secure Cardholder Data Environment (CDE).
+TechNova Solutions, a fictional e-commerce retailer, is implementing a compliance program for [PCI-DSS v4.0.0] to secure cardholder data. This document outlines the fundamental requirements of PCI-DSS to ensure a secure Cardholder Data Environment (CDE).
 
 ## PCI-DSS Requirements
 The Payment Card Industry Data Security Standard (PCI-DSS) v4.0.0 consists of 12 core requirements, grouped into six control objectives:
